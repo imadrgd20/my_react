@@ -4,7 +4,7 @@ import Calculater from './Calculatrice/Calculater';
 
 function App() {
   return (
-    <Calculater/>
+  <h1>hello</h1>
   );
 }
 
