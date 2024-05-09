@@ -1,11 +1,10 @@
 import logo from './logo.svg';
-import './App.css';
+import Calculater from './Calculatrice/Calculater';
+
 
 function App() {
   return (
-    <div className="App">
-      Hello Im Imad
-    </div>
+    <Calculater/>
   );
 }
 
