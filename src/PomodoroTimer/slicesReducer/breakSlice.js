@@ -12,7 +12,7 @@ export const breaksSlice=createSlice({
             state.left=state.length
         },
         breaksAdjuster1:(state,action)=>{
-            state.length=action.payload;
+            state.length=Math.max(1,Math.min(10,action.payload));
             state.left=state.length
         },
         breaksTic:state=>{
