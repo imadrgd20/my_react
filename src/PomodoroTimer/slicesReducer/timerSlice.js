@@ -10,12 +10,14 @@ export const timerSlice=createSlice({
     initialState,
     reducers:{
         adjustTimer:(state,action)=>{
-            state.length=Math.max(10,Math.min(60,state.length+action.payload));
-            state.timeLeft=state.length*60
+            const newLength = Math.max(10, Math.min(60, state.length + action.payload));
+            state.length = newLength;
+            state.timeLeft = newLength * 60;    
         },
         adjustTimer1:(state,action)=>{
-            state.length=action.payload;
-            state.timeLeft=state.length*60;
+            const newLength = Math.max(10, Math.min(60, action.payload));
+            state.length = newLength;
+            state.timeLeft = newLength * 60;
         },
         isRunnigSet:(state,action)=>{
             state.isRunnig=action.payload
