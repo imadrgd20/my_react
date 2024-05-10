@@ -1,8 +1,10 @@
+import PomodoroTimer from "./PomodoroTimer/PomodoroTimer";
 
-import MarkDown from './MarkDown/MarkDown';
+
 function App() {
+  
   return (
-    <MarkDown/>
+    <PomodoroTimer/>
   );
 }
 
