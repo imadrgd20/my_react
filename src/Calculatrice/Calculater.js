@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Calculatrice.css';
+import './Calculatrice.scss';
 export default function Calculatrice(){
 
 
